@@ -6,15 +6,20 @@ from model.blog import Blog
 from model.comment import Comment
 
 
-class InfoHandler(BaseHandler):
+class CommentHandler(BaseHandler):
 
     def do_action(self):
         args = self.get_args([
             ('text_id', str, None),
+            ('email', str, None),
+            ('subject', str, None),
+            ('comment', str, None),
         ])
         text_id = args.get('text_id')
+        chelper = Comment()
+        chelper.create(args)
+        comments = Comment().get_all(text_id)
         res = Blog().get_one(text_id)
-        comment = Comment().get_all(text_id)
-        res['comment'] = comment
+        res['comment'] = comments
         self.result = res
         return True
