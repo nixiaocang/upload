@@ -173,6 +173,7 @@
         });
         $http.get('/api/list?user_id=jiaogf').success(function (response) {
                 $scope.result = response.result;
+                $scope.reset();
             });
         $scope.get_info = function (text_id) {
             window.location.href = 'blog1.html?text_id=' + text_id
@@ -180,7 +181,7 @@
          $scope.reset = function () {
              $scope.email = "Email";
              $scope.subject = "Subject";
-             $scope.comment = "Message -123";
+             $scope.comment = "Message";
 
          };
          $scope.submit = function () {
