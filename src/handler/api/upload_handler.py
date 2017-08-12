@@ -18,7 +18,7 @@ class UploadHandler(BaseHandler):
         ])
         action = args.get('action')
         path = '/Users/jiaoguofu/myproject/upload/static/ueditor/php/config.json'
-        static_path = "/Users/jiaoguofu/myproject/static/"
+        static_path = "/Users/jiaoguofu/myproject/upload/static/"
         with open(path) as fp:
             try:
                 CONFIG = json.loads(fp.read())

@@ -125,9 +125,7 @@
 						</div>
 						<div class="content">
 							<img src="images/img1.jpg" width="100%"/>
-							<p> {{res.content}}</p>
-							<p> {{res.content}}</p>
-							<p> {{res.content}}</p>
+							<div id="cc"></div>
 						</div>
 						<div class="info">
 							<ul>
@@ -169,6 +167,10 @@
         var text_id = url.split("=")[1]
 		$http({method: 'POST', url: '/api/info', params: {text_id: text_id}}).success(function (response) {
 		    var res = response.result;
+		    console.log(res);
+		    res.content = decodeURIComponent(res.content);
+		    document.getElementById("cc").innerHTML=res.content;
+		    console.log(res);
 		    $scope.res = res;
         });
         $http.get('/api/list?user_id=jiaogf').success(function (response) {
@@ -176,7 +178,7 @@
                 $scope.reset();
             });
         $scope.get_info = function (text_id) {
-            window.location.href = 'blog1.html?text_id=' + text_id
+
             };
          $scope.reset = function () {
              $scope.email = "Email";

@@ -7,11 +7,11 @@ class Blog():
     def __init__(self):
         self.db = MySQLHelper()
 
-    def create(self, type, user_id, ds_id):
-        task_id = tools.uniq_id('txt')
-        sql = 'insert into blog (`task_id`, `type`, `owner`, `rela_id`) values ("%s", "%d", "%s", "%s")' % (task_id, 0, user_id, ds_id)
+    def create(self, args):
+        text_id = tools.uniq_id('text')
+        sql = "INSERT INTO `blog` (`user_id`, `text_id`, `content`) VALUES ('%s', '%s', '%s')" % (args['user_id'], text_id, args['content'])
         self.db.query(sql)
-        return task_id
+        return text_id
     def get_one(self, text_id):
         sql = 'select * from blog where text_id="%s" and is_del=0' % text_id
         res = self.db.query(sql)

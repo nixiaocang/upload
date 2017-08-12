@@ -123,6 +123,7 @@ class Uploader:
         try:
             with open(self.filePath, 'wb') as up:  # 有些文件需要已二进制的形式存储，实际中可以更改
                 up.write(self.fileobj['body'])
+            print self.filePath
             self.stateInfo = self.stateMap[0]
         except:
             self.stateInfo = self.getStateError('ERROR_FILE_MOVE')

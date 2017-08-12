@@ -156,7 +156,7 @@
                         </script>
                     </div>
                     <div style="float: right">
-                        <button class="tbtn">保存</button>
+                        <button class="tbtn" ng-click="save()">保存</button>
                     </div>
                 </div>
             </div>
@@ -167,10 +167,23 @@
 <script type="text/javascript" src="ueditor/ueditor.all.js"></script>
 <script type="text/javascript">
     var ue = UE.getEditor('container');
-</script>
-<script type="text/javascript">
     var app = angular.module('myApp', []);
     app.controller('myCtrl', function ($scope, $http) {
+        $scope.save=function(){
+            var content = ue.getContent();
+            var data = {
+                "user_id":"jiaogf",
+                "content" : encodeURIComponent(content)
+
+            };
+            console.log(data);
+            $http({method: 'POST', url: '/api/save', params: data}).success(function (response) {
+			     $scope.text_id = response.result;
+                 window.location.href = 'blog1.html?text_id=' + $scope.text_id
+        });
+
+
+        };
         $scope.res = [
             {
                 'title': '111',
