@@ -13,6 +13,10 @@ class SaveHandler(BaseHandler):
             ('content', str, None),
             ('user_id', str, None),
         ])
-        text_id = Blog().create(args)
+        text_id = self.get_argument('text_id', None)
+        if text_id:
+            Blog().modify(text_id, args['content'])
+        else:
+            text_id = Blog().create(args)
         self.result = text_id
         return True

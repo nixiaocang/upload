@@ -76,7 +76,8 @@
 						<li><a href="story.html">Story</a></li>
 						<li><a href="about.html">About</a></li>
 						<li><a href="contact.html">Contact</a></li>
-						<li><a href="addblog.html">Add Blog</a></li>
+						<li><a href="addblog.html">Add</a></li>
+						<li><a href="edit.html?text_id={{text_id}}">Edit</a></li>
 					</ul>
 				</div>
 			</div>
@@ -109,7 +110,6 @@
                             <div class="heading"><h2>Popular Post</h2></div>
                             <div class="content">
                                 <div class="post" ng-repeat="x in result">
-                                    <img ng-src="{{x.path}}" width="50px"/>
                                     <h4><a ng-click="get_info(x.text_id)">{{x.title}}</a></h4>
                                     <p>{{x.date}}</p>
                                 </div>
@@ -124,7 +124,6 @@
 							<h2><a href="#">{{res.title}}</a></h2>
 						</div>
 						<div class="content">
-							<img src="images/img1.jpg" width="100%"/>
 							<div id="cc"></div>
 						</div>
 						<div class="info">
@@ -164,7 +163,8 @@
     var app = angular.module('myApp', []);
     app.controller('myCtrl', function ($scope, $http) {
         var url = location.search;
-        var text_id = url.split("=")[1]
+        var text_id = url.split("=")[1];
+        $scope.text_id=text_id;
 		$http({method: 'POST', url: '/api/info', params: {text_id: text_id}}).success(function (response) {
 		    var res = response.result;
 		    console.log(res);

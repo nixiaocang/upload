@@ -12,6 +12,11 @@ class Blog():
         sql = "INSERT INTO `blog` (`user_id`, `text_id`, `content`) VALUES ('%s', '%s', '%s')" % (args['user_id'], text_id, args['content'])
         self.db.query(sql)
         return text_id
+
+    def modify(self, text_id, content):
+        sql = "update blog set content='%s' where text_id='%s'" % (content, text_id)
+        res = self.db.query(sql)
+        return text_id
     def get_one(self, text_id):
         sql = 'select * from blog where text_id="%s" and is_del=0' % text_id
         res = self.db.query(sql)
