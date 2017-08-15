@@ -109,13 +109,11 @@
                 <div class="wrap-nav">
                     <div class="menu">
                         <ul>
-                            <li><a href="index1.html">Home</a></li>
-                            <li><a href="blog1.html">Blog</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="story.html">Story</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="addblog.html">Add</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="contact.html">Contact</a></li>
-                            <li><a href="addblog.html">Add Blog</a></li>
+
                         </ul>
                     </div>
                 </div>
@@ -152,8 +150,8 @@
                     <div>
                         <p>标题:</p>
                         <input type="text" ng-model="title" style="background: #FFF;	padding: 1px 1px 1px 33px;	width: 90%;	height: 28px;	border: 1px solid #EEEEEE;">
-                        <p>备注:</p>
-                        <input type="text" ng-model="subtitle" style="background: #FFF;	padding: 1px 1px 1px 33px;	width: 90%;	height: 28px;	border: 1px solid #EEEEEE;">
+                        <!--<p>备注:</p>-->
+                        <!--<input type="text" ng-model="subtitle" style="background: #FFF;	padding: 1px 1px 1px 33px;	width: 90%;	height: 28px;	border: 1px solid #EEEEEE;">-->
                     </div>
                     <div class="wrap-col">
                         <article>
@@ -186,7 +184,6 @@
             res.content = decodeURIComponent(res.content);
             $scope.res = res;
             $scope.title = res.title;
-            $scope.subtitle = res.subtitle;
             ue.ready(function () {
                 ue.setContent(res.content);
             });
@@ -195,18 +192,19 @@
         });
         $scope.save=function() {
             var content = ue.getContent();
+            var subtitle = ue.getContentTxt();
             var data = {
                 "user_id": "jiaogf",
                 "content": encodeURIComponent(content),
                 "text_id": text_id,
                 "title":$scope.title,
-                "subtitle":$scope.subtitle
+                "subtitle":subtitle.substring(0,300)
 
             };
             console.log(data);
             $http({method: 'POST', url: '/api/save', params: data}).success(function (response) {
                 $scope.text_id = response.result;
-                window.location.href = 'blog1.html?text_id=' + $scope.text_id
+                window.location.href = 'blog.html?text_id=' + $scope.text_id
             });
         };
     });

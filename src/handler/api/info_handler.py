@@ -16,5 +16,7 @@ class InfoHandler(BaseHandler):
         res = Blog().get_one(text_id)
         comment = Comment().get_all(text_id)
         res['comment'] = comment
+        read = res['read'] + 1
+        Blog().update_read(text_id, read)
         self.result = res
         return True

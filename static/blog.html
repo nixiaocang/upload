@@ -8,7 +8,7 @@
     <!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>zSoodany</title>
+	<title>前尘忆梦</title>
 	<meta name="description" content="Free Responsive Html5 Css3 Templates Designed by Kimmy | ">
 	<meta name="author" content="">
 	
@@ -21,6 +21,7 @@
   	<link rel="stylesheet" href="css/zerogrid.css">
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/calendar.css">
 	
 	<!--[if lt IE 8]>
        <div style=' clear: both; text-align:center; position: relative;'>
@@ -34,10 +35,11 @@
 		<script src="js/css3-mediaqueries.js"></script>
 	<![endif]-->
 	
-	<link href='./images/favicon.ico' rel='icon' type='image/x-icon'/>
+	<link href='./images/s1.ico' rel='icon' type='image/x-icon'/>
+    <script src="https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js"></script>
     
 </head>
-<body>
+<body ng-app="myApp" ng-controller="myCtrl" ng-model="res">
 <div class="wrap-body zerogrid">
 <!--------------Header--------------->
 <header>
@@ -60,8 +62,8 @@
 		</div>
 		
 		<div id="logo">
-			<a href="#"><h1>zSoodany</h1></a>
-			<p> | Free Responsive Html5 and Css3 Templates</p>
+			<a href="#"><h1>静水流深</h1></a>
+			<p>在每一条有形无形的流水之前,我都愿意自己是宁静得足以聆见水之清音的过客</p>
 		</div>
 		
 		<nav>
@@ -69,10 +71,10 @@
 				<div class="menu">
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Gallery</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="addblog.html">Add</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="edit.html?text_id={{text_id}}">Edit</a></li>
 					</ul>
 				</div>
 			</div>
@@ -85,136 +87,118 @@
 <section id="content">
 	<div class="wrap-content">
 		<div class="row block">
+			 <div id="sidebar" class="col-1-3">
+                    <div class="wrap-col">
+                        <div class="box">
+                            <div id="calendar" class="calendar"></div>
+                            <script src="js/jquery.min.js"></script>
+                            <script src="js/calendar.js"></script>
+
+                        </div>
+                        <div class="box">
+                            <div class="heading"><h2>Catalog</h2></div>
+                            <div class="content">
+                                <ul>
+                                    <li ng-repeat="x in result"><a ng-click="get_info(x.text_id)">{{x.title}}</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="heading"><h2>Popular Post</h2></div>
+                            <div class="content">
+                                <div class="post" ng-repeat="x in result">
+                                    <h4><a ng-click="get_info(x.text_id)">{{x.title}}</a></h4>
+                                    <p>{{x.date}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 			<div id="main-content" class="col-2-3">
 				<div class="wrap-col">
 					<article>
 						<div class="heading">
-							<h2><a href="#">Sed accumsan libero quis mi commodo et suscipit</a></h2>
+							<h2><a href="#">{{res.title}}</a></h2>
+							<!--<h3>{{res.subtitle}}</h3>-->
 						</div>
 						<div class="content">
-							<img src="images/img1.jpg" width="100%"/>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque. Curabitur vel urna. In tristique orci porttitor ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo.</p>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque. Curabitur vel urna. In tristique orci porttitor ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo.</p>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque. Curabitur vel urna. In tristique orci porttitor ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo.</p>
+							<div id="cc"></div>
 						</div>
 						<div class="info">
-							<p>By Admin on December 01, 2012 - <a href="#">01 Commnets</a></p>
+							<ul>
+								<li ng-repeat="x in res.comment">
+									<p>{{x.subject}}</p>
+									<p>{{x.ctime}}</p>
+									<p>{{x.comment}}</p>
+								</li>
+							</ul>
+
 						</div>
 					</article>
 					
 					<section>
 						<h3>Leave a Comment</h3>
 						
-						<form id="contact-form" method="post">
+						<form id="contact-form">
 						    <fieldset>
-						        <label><input name="email" value="Email" onBlur="if(this.value=='') this.value='Email'" onFocus="if(this.value =='Email' ) this.value=''" /></label>
-						        <label><input name="subject" value="Subject" onBlur="if(this.value=='') this.value='Subject'" onFocus="if(this.value =='Subject' ) this.value=''" /></label>
-						        <textarea onBlur="if(this.value=='') this.value='Message'" onFocus="if(this.value =='Message' ) this.value=''">Message</textarea>
+						        <label><input ng-model="email" name="email" value="Email" onBlur="if(this.value=='') this.value='Email'" onFocus="if(this.value =='Email' ) this.value=''" /></label>
+						        <label><input ng-model="subject" name="subject" value="Subject" onBlur="if(this.value=='') this.value='Subject'" onFocus="if(this.value =='Subject' ) this.value=''" /></label>
+						        <textarea ng-model="comment" onBlur="if(this.value=='') this.value='Message'" onFocus="if(this.value =='Message' ) this.value=''">Message</textarea>
 						        <div class="buttons">
-						            <a href="#" onClick="document.getElementById('contact-form').reset()">Clear</a>
-						            <a href="#" onClick="document.getElementById('contact-form').submit()">Send</a>
+						            <a style="color: #76D2C5" href="#" ng-click="reset()">Clear</a>
+						            <a style="color: #76D2C5" href="#" ng-click="submit()">Send</a>
 						        </div>											
 						    </fieldset>           
 						</form>
 					</section>
 				</div>
 			</div>
-			<div id="sidebar" class="col-1-3">
-				<div class="wrap-col">
-					<div class="box">
-						<div class="heading"><h2>About us</h2></div>
-						<div class="content">
-							<a href="#" target="_blank"><img src="images/zerotheme.jpg" style="border: 0px;"/></a>
-							<p>Free Html5 Templates created by <a href="#">Zerotheme</a>. You can use and modify the template for both personal and commercial use. You must keep all copyright information and credit links in the template and associated files.</p>
-						</div>
-					</div>
-					<div class="box">
-						<div class="heading"><h2>Categories</h2></div>
-						<div class="content">
-							<ul>
-								<li><a href="#">Free Html5 Templates</a></li>
-								<li><a href="#">Free Responsive Themes</a></li>
-								<li><a href="#">Free Html5 and Css3 Themes</a></li>
-								<li><a href="#">Free Responsive Html5 and Css3 Themes</a></li>
-								<li><a href="#">Free Basic Responsive Html5 Css3 Layouts</a></li>
-								<li><a href="#">Premium Responsive Html5 Css3 Templates</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="box">
-						<div class="heading"><h2>Popular Post</h2></div>
-						<div class="content">
-							<div class="post">
-								<img src="images/img4.jpg" width="50px"/>
-								<h4><a href="#">Lorem ipsum dolor sit</a></h4>
-								<p>November 11 ,2012</p>
-							</div>
-							<div class="post">
-								<img src="images/img5.jpg" width="50px"/>
-								<h4><a href="#">Lorem ipsum dolor sit</a></h4>
-								<p>November 11 ,2012</p>
-							</div>
-							<div class="post">
-								<img src="images/img1.jpg" width="50px"/>
-								<h4><a href="#">Lorem ipsum dolor sit</a></h4>
-								<p>November 11 ,2012</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
 	</div>
 </section>
-<!--------------Footer--------------->
-<footer>
-	<div class="wrap-footer">
-		<div class="row">
-			<div class="col-1-3">
-				<div class="wrap-col">
-					<div class="box">
-						<div class="heading"><h2>Image Gallery</h2></div>
-						<div class="content gallery">
-							<a href="#"><img src="images/img1.jpg" width="120"/></a>
-							<a href="#"><img src="images/img2.jpg" width="120"/></a>
-							<a href="#"><img src="images/img3.jpg" width="120"/></a>
-							<a href="#"><img src="images/img4.jpg" width="120"/></a>
-							<a href="#"><img src="images/img5.jpg" width="120"/></a>
-							<a href="#"><img src="images/img1.jpg" width="120"/></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-1-3">
-				<div class="wrap-col">
-					<div class="box">
-						<div class="heading"><h2>About Us</h2></div>
-						<div class="content">
-							<a href="#" target="_blank"><img src="images/zerotheme.jpg" style="border: 0px;"/></a>
-							<p><a href="#" target="_blank">Free Html5 Templates</a> created by <a href="#">Zerotheme</a>. You can use and modify the template for both personal and commercial use. You must keep all copyright information and credit links in the template and associated files.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-1-3">
-				<div class="wrap-col">
-					<div class="box">
-						<div class="heading"><h2>Contact Us</h2></div>
-						<div class="content">
-							<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue.</p>
-							<p>Website : <a href="#" target="_blank">www.</a></p>
-							<p>+1 (123) 444-5677 <br/> +1 (123) 444-5678</p>
-							<p>Address: 123 TemplateAccess Rd1</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="copyright">
-		<p>Copyright © 2014 - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> </p>
-	</div>
-</footer>
-
 </div>
+<script type="text/javascript">
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function ($scope, $http) {
+        var url = location.search;
+        var text_id = url.split("=")[1];
+        $scope.text_id=text_id;
+		$http({method: 'POST', url: '/api/info', params: {text_id: text_id}}).success(function (response) {
+		    var res = response.result;
+		    console.log(res);
+		    res.content = decodeURIComponent(res.content);
+		    document.getElementById("cc").innerHTML=res.content;
+		    console.log(res);
+		    $scope.res = res;
+        });
+        $http.get('/api/list?user_id=jiaogf').success(function (response) {
+                $scope.result = response.result;
+                $scope.reset();
+            });
+        $scope.get_info = function (text_id) {
+
+            };
+         $scope.reset = function () {
+             $scope.email = "Email";
+             $scope.subject = "Subject";
+             $scope.comment = "Message";
+
+         };
+         $scope.submit = function () {
+             var data = {
+
+                 "email": $scope.email,
+                 "subject":$scope.subject,
+				 "comment":$scope.comment,
+				 "text_id": text_id,
+
+			 }
+			 $http({method: 'POST', url: '/api/comment', params: data}).success(function (response) {
+			     $scope.res = response.result;
+			     $scope.reset();
+        });
+
+         };
+    });
+</script>
 </body></html>

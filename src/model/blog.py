@@ -23,10 +23,14 @@ class Blog():
         return res[0]
 
     def get_list(self, user_id):
-        sql = 'select * from blog where user_id="%s"' % user_id
+        sql = 'select * from blog where user_id="%s" and is_del=0' % user_id
         res = self.db.query(sql)
         return res
 
+    def update_read(self, text_id, read):
+         sql = "update blog set `read`=%s where text_id='%s'" % (read, text_id)
+         res = self.db.query(sql)
+         return text_id
 
 if __name__=='__main__':
     print Blog().get_list('jiaogf')

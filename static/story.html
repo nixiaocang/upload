@@ -78,8 +78,8 @@
                 <div class="wrap-nav">
                     <div class="menu">
                         <ul>
-                            <li><a href="index1.html">Home</a></li>
-                            <li><a href="blog1.html">Blog</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="blog.html">Blog</a></li>
                             <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="story.html">Story</a></li>
                             <li><a href="about.html">About</a></li>
@@ -116,7 +116,7 @@
                             <div class="heading"><h2>Popular Post</h2></div>
                             <div class="content">
                                 <div class="post" ng-repeat="x in res">
-                                    <img ng-src="{{x.path}}" width="50px"/>
+                                    <img src="{{x.path}}" width="50px"/>
                                     <h4><a href="{{x.link}}">{{x.title}}</a></h4>
                                     <p>{{x.date}}</p>
                                 </div>
@@ -128,11 +128,12 @@
                     <div class="wrap-col">
                         <article ng-repeat="x in res">
                             <div class="heading">
-                                <h2><a ng-click="get_info(x.text_id)">{{x.title}}</a></h2>
+                                <h2><a href="{{x.link}}">{{x.title}}</a></h2>
                             </div>
                             <div class="content">
-                                <img ng-src="{{x.path}}" width="250px" height="100px"/>
-                                <p>{{x.content}}</p>
+                                <img src="{{x.path}}" width="250px" height="100px"/>
+                                <p>{{x.text}}</p>
+
                             </div>
                             <div class="info">
                                 <p>{{x.date}} - <a href="{{x.link}}">{{x.comment}}</a></p>
@@ -148,17 +149,18 @@
 <script type="text/javascript">
     var app = angular.module('myApp', []);
     app.controller('myCtrl', function ($scope, $http) {
-            $http.get('/api/list?user_id=jiaogf').success(function (response) {
-                for (var i=0;i<response.result.length;i++){
-                    response.result[i].content = decodeURIComponent(response.result[i].content);
-                }
-                $scope.res = response.result;
-            });
-            $scope.get_info = function (text_id) {
-            window.location.href = 'blog1.html?text_id=' + text_id
-            };
-
-        });
+        $scope.res = [
+            {'title':'111', 'link':'https://www.baidu.com', 'path':'images/img1.jpg', 'date': 'November 11 ,2012', 'comment':'01 Comments','text':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus. Nulla sed nisl mauris, id tristique tortor. Sed iaculis dapibus urna nec dictum. Morbi rutrum vulputate est sed faucibus. Nulla sed nisl mauris, id tristique tortor. Sed iaculis dapibus urna nec dictum [...]'},
+            {'title':'222', 'link':'https://www.baidu.com', 'path':'images/img2.jpg', 'date': 'November 12 ,2013', 'comment':'02 Comments','text':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus. Nulla sed nisl mauris, id tristique tortor. Sed iaculis dapibus urna nec dictum. Morbi rutrum vulputate est sed faucibus. Nulla sed nisl mauris, id tristique tortor. Sed iaculis dapibus urna nec dictum [...]'},
+            {'title':'333', 'link':'https://www.baidu.com', 'path':'images/img3.jpg', 'date': 'November 13 ,2014', 'comment':'03 Comments','text':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus. Nulla sed nisl mauris, id tristique tortor. Sed iaculis dapibus urna nec dictum. Morbi rutrum vulputate est sed faucibus. Nulla sed nisl mauris, id tristique tortor. Sed iaculis dapibus urna nec dictum [...]'},
+            {'title':'444', 'link':'https://www.baidu.com', 'path':'images/img4.jpg', 'date': 'November 14 ,2015', 'comment':'04 Comments','text':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus. Nulla sed nisl mauris, id tristique tortor. Sed iaculis dapibus urna nec dictum. Morbi rutrum vulputate est sed faucibus. Nulla sed nisl mauris, id tristique tortor. Sed iaculis dapibus urna nec dictum [...]'},
+            {'title':'555', 'link':'https://www.baidu.com', 'path':'images/img5.jpg', 'date': 'November 15 ,2016', 'comment':'05 Comments','text':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus. Nulla sed nisl mauris, id tristique tortor. Sed iaculis dapibus urna nec dictum. Morbi rutrum vulputate est sed faucibus. Nulla sed nisl mauris, id tristique tortor. Sed iaculis dapibus urna nec dictum [...]'},
+            {'title':'666', 'link':'https://www.baidu.com', 'path':'images/img1.jpg', 'date': 'November 16 ,2017', 'comment':'06 Comments','text':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. Morbi rutrum vulputate est sed faucibus. Nulla sed nisl mauris, id tristique tortor. Sed iaculis dapibus urna nec dictum. Morbi rutrum vulputate est sed faucibus. Nulla sed nisl mauris, id tristique tortor. Sed iaculis dapibus urna nec dictum [...]'},
+        ]
+//        $http.get('/api/list?user_id=jiaogf').success(function (response) {
+//            $scope.res = response.result;
+//        });
+    });
 </script><!-- Bootstrap (http://v4-alpha.getbootstrap.com/) -->
 </body>
 </html>

@@ -1,5 +1,12 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
 <head>
 
     <!-- Basic Page Needs
@@ -32,43 +39,11 @@
     <!--[if lt IE 9]>
     <script src="js/html5.js"></script>
     <script src="js/css3-mediaqueries.js"></script>
+
     <![endif]-->
 
     <link href='./images/s1.ico' rel='icon' type='image/x-icon'/>
-
     <script src="https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js"></script>
-    <style type="text/css">
-        .tbtn {
-            text-rendering: auto;
-            letter-spacing: normal;
-            word-spacing: normal;
-            text-transform: none;
-            text-indent: 0px;
-            font: 11px system-ui;
-            box-sizing: border-box;
-            align-items: flex-start;
-            margin: 0;
-            -webkit-appearance: button;
-            font-weight: normal;
-            inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-            border-radius: 4px;
-            border: 1px solid #ccc;
-            vertical-align: middle;
-            cursor: pointer;
-            text-align: center;
-            display: inline-block;
-            padding: 4px 12px;
-            margin-bottom: 0;
-            font-size: 14px;
-            line-height: 20px;
-            border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-            background-color: #76d2c5;
-            color: #fff;
-
-        }
-    </style>
-    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
 </head>
 <body ng-app="myApp" ng-controller="myCtrl" ng-model="res">
 <div class="wrap-body zerogrid">
@@ -89,8 +64,8 @@
                 <div id="search">
                     <div class="button-search"></div>
                     <input type="text" value="Search..."
-                           onfocus="if (this.value == &#39;Search...&#39;) {this.value = &#39;&#39;;}"
-                           onblur="if (this.value == &#39;&#39;) {this.value = &#39;Search...&#39;;}">
+                           onFocus="if (this.value == &#39;Search...&#39;) {this.value = &#39;&#39;;}"
+                           onBlur="if (this.value == &#39;&#39;) {this.value = &#39;Search...&#39;;}">
                 </div>
             </div>
 
@@ -103,7 +78,7 @@
                 <div class="wrap-nav">
                     <div class="menu">
                         <ul>
-                             <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="addblog.html">Add</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="contact.html">Contact</a></li>
@@ -114,82 +89,36 @@
 
         </div>
     </header>
-
+    <div class="copyrights">Collect from <a href="http://www.cssmoban.com/">网页模板</a></div>
     <!--------------Content--------------->
-    <section id="content">
-        <div class="wrap-content">
-            <div class="row block">
-                <div id="sidebar" class="col-1-3">
+    <footer>
+        <div class="wrap-footer">
+            <div class="row">
+                <div class="col-1-3">
                     <div class="wrap-col">
                         <div class="box">
-                            <div id="calendar" class="calendar"></div>
-                            <script src="js/jquery.min.js"></script>
-                            <script src="js/calendar.js"></script>
-
-                        </div>
-                        <div class="box">
-                            <div class="heading"><h2>Catalog</h2></div>
-                            <div class="content">
-                                <ul>
-                                    <li ng-repeat="x in res"><a href="{{x.link}}">{{x.title}}</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="heading"><h2>Popular Post</h2></div>
-                            <div class="content">
-                                <div class="post" ng-repeat="x in res">
-                                    <img ng-src="{{x.path}}" width="50px"/>
-                                    <h4><a href="{{x.link}}">{{x.title}}</a></h4>
-                                    <p>{{x.date}}</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div id="main-content" class="col-2-3">
-                    <div>
-                        <p>标题:</p>
-                        <input type="text" ng-model="title" style="background: #FFF;	padding: 1px 1px 1px 33px;	width: 90%;	height: 28px;	border: 1px solid #EEEEEE;">
-                        <!--<p>备注:</p>-->
-                        <!--<input type="text" ng-model="subtitle" style="background: #FFF;	padding: 1px 1px 1px 33px;	width: 90%;	height: 28px;	border: 1px solid #EEEEEE;">-->
-                    </div>
+                <div class="col-1-3">
                     <div class="wrap-col">
-                        <script id="container" name="content" type="text/plain">
-                        </script>
-                    </div>
-                    <div style="float: right">
-                        <button class="tbtn" ng-click="save()">保存</button>
+                        <div class="box">
+                            <div class="heading" style="text-align:center"><h2>Contact Us</h2></div>
+                            <div class="content">
+                                <div><p><a href="#">Q Q :</a> 470314062</p></div>
+                                <div><p><a href="#">电 话:</a> 13718563468</p></div>
+                                <div><p><a href="#">地 址:</a> 中国北京</p></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 </div>
-<script type="text/javascript" src="ueditor/ueditor.config.js"></script>
-<script type="text/javascript" src="ueditor/ueditor.all.js"></script>
 <script type="text/javascript">
-    var ue = UE.getEditor('container');
     var app = angular.module('myApp', []);
     app.controller('myCtrl', function ($scope, $http) {
-        $scope.save=function(){
-            var content = ue.getContent();
-            var subtitle = ue.getContentTxt();
-            var data = {
-                "user_id":"jiaogf",
-                "content" : encodeURIComponent(content),
-                "title":$scope.title,
-                "subtitle":subtitle.substring(0,300)
-
-            };
-            console.log(data);
-            $http({method: 'POST', url: '/api/save', params: data}).success(function (response) {
-			     $scope.text_id = response.result;
-                 window.location.href = 'blog.html?text_id=' + $scope.text_id
-        });
-
-
-        };
         $scope.res = [
             {
                 'title': '111',
@@ -244,6 +173,6 @@
 //            $scope.res = response.result;
 //        });
     });
-</script>
+</script><!-- Bootstrap (http://v4-alpha.getbootstrap.com/) -->
 </body>
 </html>
