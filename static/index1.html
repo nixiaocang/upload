@@ -133,7 +133,6 @@
                             <div class="content">
                                 <img ng-src="{{x.path}}" width="250px" height="100px"/>
                                 <p>{{x.content}}</p>
-
                             </div>
                             <div class="info">
                                 <p>{{x.date}} - <a href="{{x.link}}">{{x.comment}}</a></p>
@@ -150,6 +149,9 @@
     var app = angular.module('myApp', []);
     app.controller('myCtrl', function ($scope, $http) {
             $http.get('/api/list?user_id=jiaogf').success(function (response) {
+                for (var i=0;i<response.result.length;i++){
+                    response.result[i].content = decodeURIComponent(response.result[i].content);
+                }
                 $scope.res = response.result;
             });
             $scope.get_info = function (text_id) {

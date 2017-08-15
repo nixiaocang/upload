@@ -9,12 +9,12 @@ class Blog():
 
     def create(self, args):
         text_id = tools.uniq_id('text')
-        sql = "INSERT INTO `blog` (`user_id`, `text_id`, `content`) VALUES ('%s', '%s', '%s')" % (args['user_id'], text_id, args['content'])
+        sql = "INSERT INTO `blog` (`user_id`, `text_id`, `content`, `title`, `subtitle`) VALUES ('%s', '%s', '%s', '%s', '%s')" % (args['user_id'], text_id, args['content'], args['title'], args['subtitle'])
         self.db.query(sql)
         return text_id
 
-    def modify(self, text_id, content):
-        sql = "update blog set content='%s' where text_id='%s'" % (content, text_id)
+    def modify(self, text_id, args):
+        sql = "update blog set content='%s', title='%s', subtitle='%s' where text_id='%s'" % (args['content'], args['title'], args['subtitle'], text_id)
         res = self.db.query(sql)
         return text_id
     def get_one(self, text_id):

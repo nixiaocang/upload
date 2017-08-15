@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5710d667-079c-48e5-b430-04fdb1acf3c8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/edit.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/handler/api/save_handler.py" afterPath="$PROJECT_DIR$/src/handler/api/save_handler.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/blog.py" afterPath="$PROJECT_DIR$/src/model/blog.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/addblog.html" afterPath="$PROJECT_DIR$/static/addblog.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/blog1.html" afterPath="$PROJECT_DIR$/static/blog1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/style.css" afterPath="$PROJECT_DIR$/static/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/edit.html" afterPath="$PROJECT_DIR$/static/edit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/index1.html" afterPath="$PROJECT_DIR$/static/index1.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,56 +20,125 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="blog1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/blog1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1198">
-              <caret line="78" column="54" lean-forward="false" selection-start-line="78" selection-start-column="54" selection-end-line="78" selection-end-column="54" />
-              <folding>
-                <marker date="1502573930000" expanded="false" signature="1020:1072" ph="..." />
-                <marker date="1502573930000" expanded="true" signature="1073:1467" ph="..." />
-                <marker date="1502573930000" expanded="true" signature="1193:1454" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addblog.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/addblog.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="69" column="12" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="69" selection-end-column="12" />
-              <folding>
-                <marker date="1502572356000" expanded="false" signature="805:857" ph="..." />
-                <marker date="1502572356000" expanded="true" signature="858:1283" ph="..." />
-                <marker date="1502572356000" expanded="true" signature="977:1272" ph="..." />
-                <marker date="1502572356000" expanded="true" signature="1094:1259" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/edit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="181" column="31" lean-forward="true" selection-start-line="181" selection-start-column="31" selection-end-line="181" selection-end-column="31" />
-              <folding>
-                <marker date="1502576463000" expanded="false" signature="1040:1092" ph="..." />
-                <marker date="1502576463000" expanded="true" signature="1093:1518" ph="..." />
-                <marker date="1502576463000" expanded="true" signature="1212:1507" ph="..." />
-                <marker date="1502576463000" expanded="true" signature="1329:1494" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="blog1.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/static/blog1.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="192">
+                  <caret line="124" column="53" lean-forward="true" selection-start-line="124" selection-start-column="53" selection-end-line="124" selection-end-column="53" />
+                  <folding>
+                    <marker date="1502779951000" expanded="false" signature="1020:1072" ph="..." />
+                    <marker date="1502779951000" expanded="true" signature="1073:1467" ph="..." />
+                    <marker date="1502779951000" expanded="true" signature="1193:1454" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="addblog.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/static/addblog.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1020">
+                  <caret line="68" column="9" lean-forward="false" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+                  <folding>
+                    <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#input#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <marker date="1502777284000" expanded="true" signature="805:857" ph="..." />
+                    <marker date="1502777284000" expanded="true" signature="858:1283" ph="..." />
+                    <marker date="1502777284000" expanded="true" signature="977:1272" ph="..." />
+                    <marker date="1502777284000" expanded="true" signature="1094:1259" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index1.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/static/index1.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="630">
+                  <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+                  <folding>
+                    <marker date="1502778354000" expanded="false" signature="1040:1092" ph="..." />
+                    <marker date="1502778354000" expanded="true" signature="1093:1518" ph="..." />
+                    <marker date="1502778354000" expanded="true" signature="1212:1507" ph="..." />
+                    <marker date="1502778354000" expanded="true" signature="1329:1494" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="blog.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/static/blog.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding>
+                    <marker date="1501674219000" expanded="false" signature="975:1027" ph="..." />
+                    <marker date="1501674219000" expanded="true" signature="1028:1422" ph="..." />
+                    <marker date="1501674219000" expanded="true" signature="1148:1409" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/static/css/style.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1365">
+                  <caret line="91" column="122" lean-forward="false" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="122" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="edit.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/static/edit.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="914">
+                  <caret line="193" column="0" lean-forward="false" selection-start-line="192" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+                  <folding>
+                    <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#input#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <marker date="1502779584000" expanded="false" signature="1040:1092" ph="..." />
+                    <marker date="1502779584000" expanded="true" signature="1093:1518" ph="..." />
+                    <marker date="1502779584000" expanded="true" signature="1212:1507" ph="..." />
+                    <marker date="1502779584000" expanded="true" signature="1329:1494" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="addblog.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/static/addblog.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15">
+                  <caret line="207" column="0" lean-forward="false" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
+                  <folding>
+                    <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#input#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <marker date="1502777284000" expanded="true" signature="805:857" ph="..." />
+                    <marker date="1502777284000" expanded="true" signature="858:1283" ph="..." />
+                    <marker date="1502777284000" expanded="true" signature="977:1272" ph="..." />
+                    <marker date="1502777284000" expanded="true" signature="1094:1259" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>ng-src</find>
+      <find>search</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -75,9 +147,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/static/addblog.html" />
-        <option value="$PROJECT_DIR$/static/blog1.html" />
+        <option value="$PROJECT_DIR$/static/index1.html" />
         <option value="$PROJECT_DIR$/static/edit.html" />
+        <option value="$PROJECT_DIR$/static/blog1.html" />
       </list>
     </option>
   </component>
@@ -87,11 +161,14 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/up/static/node_modules" />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="36" />
-    <option name="y" value="23" />
-    <option name="width" value="1423" />
-    <option name="height" value="752" />
+    <option name="x" value="202" />
+    <option name="y" value="175" />
+    <option name="width" value="1452" />
+    <option name="height" value="801" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -108,7 +185,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -137,6 +213,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -146,6 +223,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -262,6 +340,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -322,20 +406,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="36" y="23" width="1423" height="752" extended-state="0" />
+    <frame x="202" y="175" width="1452" height="801" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17849614" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09929078" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -359,12 +443,129 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/static/blog1.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2565">
+          <caret line="171" column="64" lean-forward="false" selection-start-line="171" selection-start-column="12" selection-end-line="171" selection-end-column="64" />
+          <folding>
+            <marker date="1502779951000" expanded="false" signature="1020:1072" ph="..." />
+            <marker date="1502779951000" expanded="true" signature="1073:1467" ph="..." />
+            <marker date="1502779951000" expanded="true" signature="1193:1454" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="16" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+          <folding>
+            <marker date="1502778354000" expanded="false" signature="1040:1092" ph="..." />
+            <marker date="1502778354000" expanded="true" signature="1093:1518" ph="..." />
+            <marker date="1502778354000" expanded="true" signature="1212:1507" ph="..." />
+            <marker date="1502778354000" expanded="true" signature="1329:1494" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1501674219000" expanded="false" signature="975:1027" ph="..." />
+            <marker date="1501674219000" expanded="true" signature="1028:1422" ph="..." />
+            <marker date="1501674219000" expanded="true" signature="1148:1409" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="91" column="122" lean-forward="false" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2925">
+          <caret line="195" column="32" lean-forward="true" selection-start-line="195" selection-start-column="32" selection-end-line="195" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1502779584000" expanded="false" signature="1040:1092" ph="..." />
+            <marker date="1502779584000" expanded="true" signature="1093:1518" ph="..." />
+            <marker date="1502779584000" expanded="true" signature="1212:1507" ph="..." />
+            <marker date="1502779584000" expanded="true" signature="1329:1494" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/addblog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1502777284000" expanded="true" signature="805:857" ph="..." />
+            <marker date="1502777284000" expanded="true" signature="858:1283" ph="..." />
+            <marker date="1502777284000" expanded="true" signature="977:1272" ph="..." />
+            <marker date="1502777284000" expanded="true" signature="1094:1259" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/blog1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="78" column="54" lean-forward="false" selection-start-line="78" selection-start-column="54" selection-end-line="78" selection-end-column="54" />
+          <folding>
+            <marker date="1502779951000" expanded="false" signature="1020:1072" ph="..." />
+            <marker date="1502779951000" expanded="true" signature="1073:1467" ph="..." />
+            <marker date="1502779951000" expanded="true" signature="1193:1454" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/addblog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="69" column="12" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="69" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1502777284000" expanded="true" signature="805:857" ph="..." />
+            <marker date="1502777284000" expanded="true" signature="858:1283" ph="..." />
+            <marker date="1502777284000" expanded="true" signature="977:1272" ph="..." />
+            <marker date="1502777284000" expanded="true" signature="1094:1259" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2715">
+          <caret line="181" column="31" lean-forward="true" selection-start-line="181" selection-start-column="31" selection-end-line="181" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1502779584000" expanded="false" signature="1040:1092" ph="..." />
+            <marker date="1502779584000" expanded="true" signature="1093:1518" ph="..." />
+            <marker date="1502779584000" expanded="true" signature="1212:1507" ph="..." />
+            <marker date="1502779584000" expanded="true" signature="1329:1494" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/blog1.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2625">
           <caret line="175" column="31" lean-forward="false" selection-start-line="175" selection-start-column="31" selection-end-line="175" selection-end-column="31" />
           <folding>
-            <marker date="1502573930000" expanded="false" signature="1020:1072" ph="..." />
-            <marker date="1502573930000" expanded="true" signature="1073:1467" ph="..." />
-            <marker date="1502573930000" expanded="true" signature="1193:1454" ph="..." />
+            <marker date="1502779951000" expanded="false" signature="1020:1072" ph="..." />
+            <marker date="1502779951000" expanded="true" signature="1073:1467" ph="..." />
+            <marker date="1502779951000" expanded="true" signature="1193:1454" ph="..." />
           </folding>
         </state>
       </provider>
@@ -374,60 +575,87 @@
         <state relative-caret-position="2145">
           <caret line="143" column="49" lean-forward="false" selection-start-line="143" selection-start-column="49" selection-end-line="143" selection-end-column="49" />
           <folding>
-            <marker date="1502572356000" expanded="false" signature="805:857" ph="..." />
-            <marker date="1502572356000" expanded="true" signature="858:1283" ph="..." />
-            <marker date="1502572356000" expanded="true" signature="977:1272" ph="..." />
-            <marker date="1502572356000" expanded="true" signature="1094:1259" ph="..." />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1502777284000" expanded="true" signature="805:857" ph="..." />
+            <marker date="1502777284000" expanded="true" signature="858:1283" ph="..." />
+            <marker date="1502777284000" expanded="true" signature="977:1272" ph="..." />
+            <marker date="1502777284000" expanded="true" signature="1094:1259" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="91" column="122" lean-forward="false" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="122" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/blog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2771">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1502206316000" expanded="false" signature="975:1027" ph="..." />
-            <marker date="1502206316000" expanded="true" signature="1028:1422" ph="..." />
-            <marker date="1502206316000" expanded="true" signature="1148:1409" ph="..." />
+            <marker date="1501674219000" expanded="false" signature="975:1027" ph="..." />
+            <marker date="1501674219000" expanded="true" signature="1028:1422" ph="..." />
+            <marker date="1501674219000" expanded="true" signature="1148:1409" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+          <folding>
+            <marker date="1502778354000" expanded="false" signature="1040:1092" ph="..." />
+            <marker date="1502778354000" expanded="true" signature="1093:1518" ph="..." />
+            <marker date="1502778354000" expanded="true" signature="1212:1507" ph="..." />
+            <marker date="1502778354000" expanded="true" signature="1329:1494" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/addblog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="69" column="12" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="69" selection-end-column="12" />
+        <state relative-caret-position="1020">
+          <caret line="68" column="9" lean-forward="false" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
           <folding>
-            <marker date="1502572356000" expanded="false" signature="805:857" ph="..." />
-            <marker date="1502572356000" expanded="true" signature="858:1283" ph="..." />
-            <marker date="1502572356000" expanded="true" signature="977:1272" ph="..." />
-            <marker date="1502572356000" expanded="true" signature="1094:1259" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/blog1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1198">
-          <caret line="78" column="54" lean-forward="false" selection-start-line="78" selection-start-column="54" selection-end-line="78" selection-end-column="54" />
-          <folding>
-            <marker date="1502573930000" expanded="false" signature="1020:1072" ph="..." />
-            <marker date="1502573930000" expanded="true" signature="1073:1467" ph="..." />
-            <marker date="1502573930000" expanded="true" signature="1193:1454" ph="..." />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1502777284000" expanded="true" signature="805:857" ph="..." />
+            <marker date="1502777284000" expanded="true" signature="858:1283" ph="..." />
+            <marker date="1502777284000" expanded="true" signature="977:1272" ph="..." />
+            <marker date="1502777284000" expanded="true" signature="1094:1259" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="181" column="31" lean-forward="true" selection-start-line="181" selection-start-column="31" selection-end-line="181" selection-end-column="31" />
+        <state relative-caret-position="914">
+          <caret line="193" column="0" lean-forward="false" selection-start-line="192" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
           <folding>
-            <marker date="1502576463000" expanded="false" signature="1040:1092" ph="..." />
-            <marker date="1502576463000" expanded="true" signature="1093:1518" ph="..." />
-            <marker date="1502576463000" expanded="true" signature="1212:1507" ph="..." />
-            <marker date="1502576463000" expanded="true" signature="1329:1494" ph="..." />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1502779584000" expanded="false" signature="1040:1092" ph="..." />
+            <marker date="1502779584000" expanded="true" signature="1093:1518" ph="..." />
+            <marker date="1502779584000" expanded="true" signature="1212:1507" ph="..." />
+            <marker date="1502779584000" expanded="true" signature="1329:1494" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/blog1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="124" column="53" lean-forward="true" selection-start-line="124" selection-start-column="53" selection-end-line="124" selection-end-column="53" />
+          <folding>
+            <marker date="1502779951000" expanded="false" signature="1020:1072" ph="..." />
+            <marker date="1502779951000" expanded="true" signature="1073:1467" ph="..." />
+            <marker date="1502779951000" expanded="true" signature="1193:1454" ph="..." />
           </folding>
         </state>
       </provider>

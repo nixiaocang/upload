@@ -150,6 +150,12 @@
                     </div>
                 </div>
                 <div id="main-content" class="col-2-3">
+                    <div>
+                        <p>标题:</p>
+                        <input type="text" ng-value="title" style="background: #FFF;	padding: 1px 1px 1px 33px;	width: 90%;	height: 28px;	border: 1px solid #EEEEEE;">
+                        <p>备注:</p>
+                        <input type="text" ng-value="subtitle" style="background: #FFF;	padding: 1px 1px 1px 33px;	width: 90%;	height: 28px;	border: 1px solid #EEEEEE;">
+                    </div>
                     <div class="wrap-col">
                         <script id="container" name="content" type="text/plain">
                         这里是你初始化的内容
@@ -173,7 +179,9 @@
             var content = ue.getContent();
             var data = {
                 "user_id":"jiaogf",
-                "content" : encodeURIComponent(content)
+                "content" : encodeURIComponent(content),
+                "title":$scope.title,
+                "subtitle":$scope.subtitle
 
             };
             console.log(data);

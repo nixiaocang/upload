@@ -12,10 +12,12 @@ class SaveHandler(BaseHandler):
         args = self.get_args([
             ('content', str, None),
             ('user_id', str, None),
+            ('title', str, None),
+            ('subtitle', str, None),
         ])
         text_id = self.get_argument('text_id', None)
         if text_id:
-            Blog().modify(text_id, args['content'])
+            Blog().modify(text_id, args)
         else:
             text_id = Blog().create(args)
         self.result = text_id
